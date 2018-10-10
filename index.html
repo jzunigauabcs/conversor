@@ -50,14 +50,14 @@
             </select>
             <div class="conversor">
                 <div>
-                    <input type="text" id="val1" class="result" onkeyup="calc(this)">
-                    <select name="" id="cbx1" class="cbxMeasure">
+                    <input type="text" id="val1" class="result" value="0" onkeyup="tbxCalc(0)">
+                    <select name="" id="cbx1" class="cbxMeasure" onchange="cbxCalc(0)">
                     </select>
                 </div>
                 <span>=</span>
                 <div>
-                    <input type="text" id="val2" class="result">
-                    <select name="" id="cbx2" class="cbxMeasure">
+                    <input type="text" id="val2" class="result" onkeyup="tbxCalc(1)">
+                    <select name="" id="cbx2" class="cbxMeasure" onchange="cbxCalc(1)">
                     </select>
                 </div>
             </div>
