@@ -43,12 +43,14 @@
     <body>
         <h1>Conversor</h1>
         <div class="container">
-            <select name="" class="convertion">
+            <select name="" class="convertion" id="conversor">
                 <option value="-1" selected disabled>Seleccione una opción de conversión</option>
+                <option value="1">Temperatura</option>
+                <option value="2">Longitud</option>
             </select>
             <div class="conversor">
                 <div>
-                    <input type="text" id="val1" class="result">
+                    <input type="text" id="val1" class="result" onkeyup="calc(this)">
                     <select name="" id="cbx1" class="cbxMeasure">
                     </select>
                 </div>
